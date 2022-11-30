@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="label">User Login</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <input type="submit" value="Add" class="btn btn-success">
+        </form>  
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    
+                    <th>Email</th>
+                    <th>Password</th>
+                    
+                    
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in data %}
+                <tr>
+                    <td>{{i.Email}}</td>
+                    <td>{{i.Password}}</td>
+                    
+                    
+                    <td>   
+          
+        
+    </div>     
+ </body>
+</html>
+{% endblock content %}
